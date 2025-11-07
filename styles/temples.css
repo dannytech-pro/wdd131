@@ -17,6 +17,9 @@ header{
     top: 0;
     z-index: 10;
 }
+nav {
+     display: flex;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,7 +34,7 @@ header{
     list-style: none;
     display: flex;
     gap: 1.5rem;
-    transition: tranform 0.45s ease;
+    transition: transform 0.45s ease;
 }
 .navigations li a {
     color: white;
