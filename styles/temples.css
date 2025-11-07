@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: white;
     line-height: 1.6;
 }
@@ -55,13 +55,14 @@ header{
     transition: all 0.3s ease;
 }
 .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px 5px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
+
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
 .hamburger.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(6px 6px);
+    transform: rotate(45deg) translate(6px, 6px);
 }
 main {
     text-align: center;
@@ -121,10 +122,11 @@ footer {
 
     /* Slide-in animations */
     .navigations li {
-        opacity: 0;
-        transform: translateX();
-        animation: slideIn 0.4s ease forwards;
-    }
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.4s ease forwards;
+}
+
 
     .navigations.active li:nth-child(1) { animation-delay: 0.1s; }
     .navigations.active li:nth-child(2) { animation-delay: 0.2s; }
