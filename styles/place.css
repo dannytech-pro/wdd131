@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.main-header {
+    background-color: #c0392b;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+/* Image and layout for Mobile View */
+.hero-image-wrapper {
+    height: 250px;  /*Define the area for the image on mobile */
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.hero-img {
+    width: 100%; /*image takes full width*/
+    height: 100%; /*Image takes full height*/
+    object-fit: cover; /*Ensure the image covers the area*/
+}
+
+/* --- Info Cards Container (Mobile: Stacks Vertically) --- */
+.info-cards-container {
+    display: flex; 
+    flex-direction: column; 
+    padding: 0 1rem;
+    gap: 1rem; 
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    background-color: #16a085; /* Dark Green header color */
+    color: white;
+    padding: 0.5rem 1rem;
+    /* Negative margins push the header out to the card edges */
+    margin: -1.5rem -1.5rem 1rem -1.5rem; 
+}
+
+.data-list {
+    list-style: none;
+    line-height: 1.8;
+}
+
+.data-list span {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #c0392b; 
+    color: rgb(243, 237, 237);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+

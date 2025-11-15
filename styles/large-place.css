@@ -1,0 +1,43 @@
+/* --- Media Query for wide screens (768px and up) --- */
+@media (min-width: 768px) {
+    
+    .info-page-container {
+        max-width: 1500px;
+        margin: 0 auto;
+        position: relative; /* KEY: Context for absolute cards */
+        background-color: #c0392b; 
+        padding-bottom: 4rem; 
+    }
+
+    /* Adjust image height for desktop view */
+    .hero-image-wrapper {
+        height: 450px; 
+        margin-bottom: 0;
+    }
+
+    /* Cards are absolutely positioned over the image */
+    .info-cards-container {
+        position: absolute; 
+        top: 20%; 
+        left: 0;
+        right: 0;
+        flex-direction: row; /* KEY: Arranges cards side-by-side */
+        justify-content: space-between; 
+        padding: 0 4rem;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    /* Card Styling for Overlay Appearance */
+    .info-card {
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+        width: 45%; 
+        max-width: 400px;
+    }
+
+    /* Reset margins for the header to look cleaner in the overlay */
+    .card-header {
+        margin: -1.5rem;
+        margin-bottom: 1rem;
+    }
+}
