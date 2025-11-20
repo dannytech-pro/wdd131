@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+/* Header Styling */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 1rem 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Navigation Styling */
+nav {
+    order: 2; /* Ensures nav stays below H1 on small screens */
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stacked by default */
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #005f99;
+}
+
+/* Hamburger Menu for Mobile */
+#hamburger {
+    display: block; /* Always visible for this design */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Hide nav links by default on mobile */
+#navLinks {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+#navLinks.active {
+    display: block;
+}
+
+/* Desktop Navigation */
+@media (min-width: 768px) {
+    header {
+        flex-wrap: nowrap;
+    }
+    #hamburger {
+        display: none;
+    }
+    nav {
+        order: 0;
+        width: auto;
+        margin-top: 0;
+    }
+    nav ul {
+        flex-direction: row; /* Horizontal on desktop */
+    }
+    nav a {
+        width: auto;
+        margin: 0 5px;
+    }
+    #navLinks {
+        display: block !important; /* Force display on desktop */
+    }
+}
+
+/* Main Content and Temple Cards */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 25px;
+}
+
+/* CSS for Temple Cards */
+#temple-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+figure {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+figure h3 {
+    color: #0077b6;
+    margin-top: 0;
+    border-bottom: 2px solid #e0f2ff;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+figure p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    text-align: left;
+    padding-left: 10px;
+}
+
+figure img {
+    width: 100%; 
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+}
+
+.label {
+    font-weight: 700;
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+footer p {
+    margin: 5px 0;
+}
