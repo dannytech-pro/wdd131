@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description -->
+    <meta name="description"
+      content="A simple, responsive 3-day workout routine planner (Upper Body, Lower Body, Core) built with HTML, CSS, and vanilla JavaScript. Features dynamic difficulty toggle and user-note insertion.">
+      <meta name="keywords"
+      content="3-day workout plan, responsive design, HTML5, CSS3, JavaScript, DOM manipulation, event handling, upper body, lower body, core workout, vanilla JS, front-end project">
+    <meta name="author" content="Daniel Sunday">
+    <!-- Page title -->
+    <title>A Simple | 3-Day Workout Routine Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/icons8-exercise-50.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🏋️A Simple 3-Day Workout Routine Planner</h1>
+        <p>Blueprint for the Simple 3-Day Workout Routine Planner</p>
+    </header>
+    <div class="content-section">
+
+        <section id="site-name">
+            <h2>A Simple 3-Day Workout Planner with LOGO</h2>
+            
+            <h3>A Simple 3-Day Workout Planner</h3>
+            <p><strong>Description:</strong> I chose this name because it is concise, memorable, and immediately hints at the core content—a structured, limited number of workouts/exercises (3 days, 4 exercises per day). It sounds strong and professional for a fitness resource.</p>
+            <p><strong>Logo Concept:</strong> A simple, stylized icon of a dumbbell or a divided circle (representing the 3-part split).</p>
+            <p><strong>Optional Domain Availability:</strong> <code>easyworkout.com</code> (for demonstration purposes).</p>
+        </section>
+        <section id="site-purpose">
+            <h2>🎯 Site Purpose</h2>
+            <p>The primary purpose of A Simple 3-Day Workout Planner is to provide a <strong>simple, structured, and easily accessible three-day fitness plan</strong> - Upper Body, Lower Body, Core for beginners and intermediate users.</p>
+            <p>The site serves as a crucial demonstration of responsive web design and core JavaScript functionality, specifically DOM manipulation and event handling.</p>
+            
+            <h3>Information and Services Provided:</h3>
+            <ul>
+                <li>Clear outlines for three distinct workout days with 4-5 exercises each.</li>
+                <li>A JavaScript-driven Difficulty Toggle on the Upper Body page (Beginner/Intermediate sets/reps).</li>
+                <li>A tool to dynamically add personalized notes next to core exercises on the Core page.</li>
+            </ul>
+        </section>
+
+        ---
+
+        <section id="scenarios">
+            <h2>3. 🤔 Scenarios (Target Audience Questions)</h2>
+            <p>These questions represent the target audience's needs and drive the site's content and functionality.</p>
+
+            <ol>
+                <li>
+                    <strong>"I'm a beginner, How do I know which sets and reps to use for the Upper Body workout?"</strong>
+                    <p><em>Answered by:</em> The Difficulty Toggle" button on the Upper Body page, which uses JavaScript event handling to instantly switch the displayed set/rep values between Beginner (e.g., 3 sets of 10) and Intermediate (e.g., 4 sets of 12).</p>
+                </li>
+                <li>
+                    <strong>"I want to track my progress and need to remember a modification for one of the Core exercises. Is there a place I can write that down?"</strong>
+                    <p><em>Answered by:</em> The Add Notes" button on the Core page, which uses JavaScript to dynamically insert a new, empty text input field (modifying the HTML DOM) where the user can type personalized notes.</p>
+                </li>
+            </ol>
+        </section>
+
+        ---
+
+        <section id="color-schema">
+            <h2>4. 🎨 Color Schema</h2>
+            <p>The palette uses clean, energetic tones associated with health and focus.</p>
+
+            <table>
+                <tr>
+                    <th>Color Name</th>
+                    <th>Hex Code</th>
+                    <th>Usage on Website</th>
+                </tr>
+                <tr>
+                    <td>Primary (Dark Blue)</td>
+                    <td>#1A237E</td>
+                    <td>Major Headings (H1, H2), Navigation Background, Button Text</td>
+                </tr>
+                <tr>
+                    <td>Secondary (Teal/Accent)</td>
+                    <td>#00BCD4</td>
+                    <td>Buttons (Background Color for Toggle/Add Notes), Borders, Accents</td>
+                </tr>
+                <tr>
+                    <td>Background (Off-White)</td>
+                    <td>#F5F5F5</td>
+                    <td>Main Page Background, Card Backgrounds (for content sections)</td>
+                </tr>
+                <tr>
+                    <td>Text (Dark Gray)</td>
+                    <td>#333333</td>
+                    <td>All Body Text, Paragraphs, Standard Text</td>
+                </tr>
+            </table>
+        </section>
+
+        ---
+
+        <section id="typography">
+            <h2>5. 🅰️ Typography</h2>
+            <p>Two highly readable sans-serif fonts are chosen for a modern, clean look.</p>
+
+            <table>
+                <tr>
+                    <th>Font Name</th>
+                    <th>Application</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>'Montserrat', sans-serif</td>
+                    <td>Headings (H1, H2, H3)</td>
+                    <td style="font-family: 'Montserrat', sans-serif;">This is a Heading Example</td>
+                </tr>
+                <tr>
+                    <td>'Roboto', sans-serif</td>
+                    <td>Body Text, Navigation, Lists, Data Tables</td>
+                    <td style="font-family: 'Roboto', sans-serif;">This is the body text for descriptions and instructions.</td>
+                </tr>
+            </table>
+        </section>
+
+        ---
+
+        <section id="wireframe">
+            <h2>6. 🖼️ Wireframe (Home Page Layout)</h2>
+            <p>Simple diagrams showing the layout of the Home Page for mobile and desktop screens.</p>
+
+            <div class="wireframe-container">
+                <div class="wireframe mobile-view">
+                    <h3>Mobile View</h3>
+                    <div class="placeholder" style="height: 50px;">Logo / Site Name</div>
+                    <div class="placeholder" style="height: 30px;">Hamburger Menu Icon</div>
+                    <hr>
+                    <div class="placeholder" style="height: 40px;">H1: Welcome Title</div>
+                    <div class="placeholder" style="height: 100px;">[Feature Image / Graphic]</div>
+                    <hr>
+                    <div class="placeholder" style="height: 60px;">Navigation Link: Upper Body</div>
+                    <div class="placeholder" style="height: 60px;">Navigation Link: Lower Body</div>
+                    <div class="placeholder" style="height: 60px;">Navigation Link: Core</div>
+                    <div class="placeholder footer-placeholder">Footer</div>
+                </div>
+
+                <div class="wireframe desktop-view">
+                    <h3>Desktop View (Two-Column Layout)</h3>
+                    <div class="placeholder header-placeholder">
+                        [Logo / Site Name] | [Nav: Home] | [Nav: Upper] | [Nav: Lower] | [Nav: Core]
+                    </div>
+                    <div class="desktop-main-content">
+                        <div class="desktop-content-col">
+                            <div class="placeholder" style="height: 50px;">H1: Welcome Title & Subtitle</div>
+                            <div class="placeholder" style="height: 150px;">[Large Hero Image]</div>
+                            <div class="card-row">
+                                <div class="placeholder card-placeholder">Card 1: Upper Body</div>
+                                <div class="placeholder card-placeholder">Card 2: Lower Body</div>
+                                <div class="placeholder card-placeholder">Card 3: Core</div>
+                            </div>
+                        </div>
+                        <div class="desktop-sidebar-col">
+                            <div class="placeholder" style="height: 80px;">Sidebar Feature 1</div>
+                            <div class="placeholder" style="height: 80px;">Sidebar Feature 2</div>
+                        </div>
+                    </div>
+                    <div class="placeholder footer-placeholder">Footer Information</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+
+</html>
