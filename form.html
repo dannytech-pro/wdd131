@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form id="reviewForm" action="review.html" method="get">
+            
+            <!-- Product Name -->
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="1" required> 1 &#9733;</label>
+                <label><input type="radio" name="rating" value="2"> 2 &#9733;</label>
+                <label><input type="radio" name="rating" value="3"> 3 &#9733;</label>
+                <label><input type="radio" name="rating" value="4"> 4 &#9733;</label>
+                <label><input type="radio" name="rating" value="5"> 5 &#9733;</label>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <label><input type="checkbox" id="feature1" name="features" value="Easy to use"> Easy to use</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Durable"> Durable</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Affordable"> Affordable</label>
+                <label><input type="checkbox" id="feature4" name="features" value="Innovative"> Innovative</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review" rows="4" placeholder="Write your review..."></textarea>
+
+            <!-- User Name -->
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" placeholder="Optional">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
