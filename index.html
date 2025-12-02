@@ -8,79 +8,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta description -->
     <meta name="description"
-      content="A simple, responsive 3-day workout routine planner (Upper Body, Lower Body, Core) built with HTML, CSS, and vanilla JavaScript. Features dynamic difficulty toggle and user-note insertion.">
-      <meta name="keywords"
-      content="3-day workout plan, responsive design, HTML5, CSS3, JavaScript, DOM manipulation, event handling, upper body, lower body, core workout, vanilla JS, front-end project">
+        content="WDD 131 - Dynamic Web Fundamentals, Daniel Sunday specializes in frontend development, graphic design, social media management, and live streaming services.">
+    <!-- Author -->
     <meta name="author" content="Daniel Sunday">
     <!-- Page title -->
-    <title>A Simple | 3-Day Workout Routine Planner</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Sunday</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" href="images/icons8-exercise-50.png" type="image/x-icon">
+    <link rel="icon" href="images/post-1.jpg" type="image/x-icon">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
+    <header>
+        <h1><span id="course-title">WDD131 - Dynamic Web Fundamentals - Daniel Friday Sunday</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/daniel-sunday-645023141/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank">Scripture</a>
+                </li>
+                <li><a href="images/image-placeholder.png" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>My name is <strong>Daniel Friday Sunday</strong> and I can be called <strong> Danny-Tech.</strong> I
+                    born and live in
+                    <strong>Nigeria.</strong> I am a
+                    <strong>graphic designer</strong> with
+                    catcy creativity, Web Developer, Social Media Manager also do Livestreaming in Churches and Events.
+                    I am
+                    currently a
+                    student at Brigham Young University - BYU Idaho studying Computer Programming/Software Development.
+                    I
+                    love to
+                    collaborate with team and learn new things.
+                </p>
+                <img src="images/profile-photo.jpg" alt="Profile Photo">
+            </div>
+            <h3>Nigeria</h3>
+            <div class="location">
+                <img src="images/nigerian-logo.png" alt="Nigeria Coat of Arm">
+                <p>Nigeria is a federal republic with two legislative bodies; its head of state and government is the
+                    president. Inhabited
+                    for thousands of years, the region was the centre of the Nok culture from 500 bce to 200 ce and of
+                    several precolonial
+                    empires, including Kanem-Bornu, Benin, and Oyo.</p>
+            </div>
 
-<header>
-<h1>🏋️ A Simple 3-Day Workout Routine Planner</h1>
-<nav>
-<ul class="nav-links">
-<li><a href="index.html" class="active">Home</a></li>
-<li><a href="upper.html">Upper Body</a></li>
-<li><a href="lower.html">Lower Body</a></li>
-<li><a href="core.html">Core</a></li>
-<li><a href="references.html">References</a></li>
-</ul>
-</nav>
-</header>
-
-<main>
-<section class="hero">
-<h2>Blueprint for the Simple 3-Day Workout Routine Planner</h2>
-<p>Structured 3-day fitness plan for Upper Body, Lower Body, and Core. Beginner and Intermediate friendly.</p>
-<a href="upper.html" class="btn-primary">Start Upper Body Workout</a>
-</section>
-
-<section class="overview">
-<h2>Workout Days</h2>
-<div class="cards">
-<div class="card">
-<h3>Upper Body</h3>
-<p>Arms, shoulders, chest exercises</p>
-<a href="upper.html" class="btn-secondary">View Exercises</a>
-</div>
-<div class="card">
-<h3>Lower Body</h3>
-<p>Legs, glutes, and stability</p>
-<a href="lower.html" class="btn-secondary">View Exercises</a>
-</div>
-<div class="card">
-<h3>Core</h3>
-<p>Abdominal and back strength</p>
-<a href="core.html" class="btn-secondary">View Exercises</a>
-</div>
-</div>
-</section>
-
-<section class="contact">
-<h2>Contact Us</h2>
-<form id="contactForm">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message" required></textarea>
-<button type="submit" class="btn-primary">Send Message</button>
-</form>
-<p id="formMessage"></p>
-</section>
-</main>
-
-<footer>
-<p>&copy; 2025 A Simple 3-Day Workout Planner | <a href="references.html">References</a></p>
-</footer>
-
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                <li><a href="images/image-placeholder.png" target="_blank">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©2025 🌸 Daniel Sunday 🌸 Nigeria</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
+
 </html>
