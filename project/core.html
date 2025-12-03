@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description -->
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Daniel Sunday, Get fit with our Simple 3-Day Workout Routine Planner. This easy-to-follow plan is perfect for beginners and busy schedules. Download your free, effective routine now">
+        <meta name="keyword" content="3-day workout routine, 3 day split, simple workout planner, beginner workout plan, free 3-day workout, easy fitness plan">
+    <!-- Author -->
+    <meta name="author" content="Daniel Sunday">
+    <!-- Page title -->
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Sunday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/post-1.jpg" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <h1 class="logo"><img src="images/dynamic-fitness-gym-logo.png" alt="logo" width="40" height="40" loading="lazy">Simple Workout Planner</h1>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="upper-body.html" class="nav-link">Upper Body</a></li>
+                    <li><a href="lower-body.html" class="nav-link">Lower Body</a></li>
+                    <li><a href="core.html" class="nav-link active">Core</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="workout-page">
+            <div class="workout-header">
+                <h1>Core Workout</h1>
+                <p>Build a strong, stable core for better posture and functional fitness</p>
+            </div>
+
+            <div class="notes-section">
+                <h2>Personalized Notes</h2>
+                <p>Track your modifications and progress by adding notes to your core exercises.</p>
+                <button class="add-notes-btn" id="addNotesBtn">+ Add Notes</button>
+                <div id="notesContainer" class="notes-container"></div>
+            </div>
+
+            <div class="exercises-container">
+                <div class="exercise-card">
+                    <h3>1. Plank</h3>
+                    <img src="images/plank.webp" alt="Plank exercise" loading="lazy">
+                    <p class="exercise-description">A fundamental isometric core exercise that builds endurance and stability in your entire core.</p>
+                    <div class="sets-reps">
+                        <p>Sets & Duration: 3 sets × 45-60 seconds</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Keep your body in a straight line, engage your core, and avoid letting your hips sag.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>2. Crunches</h3>
+                    <img src="images/crunches.webp" alt="Crunches exercise" loading="lazy">
+                    <p class="exercise-description">An isolation exercise that targets the rectus abdominis, the front of your core muscles.</p>
+                    <div class="sets-reps">
+                        <p>Sets & Reps: 3 sets × 15 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Keep your hands behind your head, lift your shoulders off the ground, and control the descent.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>3. Bicycle Crunches</h3>
+                    <img src="images/bicycle-crunches.webp" alt="Bicycle crunches exercise" loading="lazy">
+                    <p class="exercise-description">A dynamic core exercise that engages both the rectus abdominis and obliques for comprehensive core development.</p>
+                    <div class="sets-reps">
+                        <p>Sets & Reps: 3 sets × 20 reps (10 per side)</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Move with control, bring your elbow toward the opposite knee, and maintain steady breathing.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>4. Russian Twists</h3>
+                    <img src="images/russian-twists.webp" alt="Russian twists exercise" loading="lazy">
+                    <p class="exercise-description">An oblique-focused exercise that improves rotational strength and core stability.</p>
+                    <div class="sets-reps">
+                        <p>Sets & Reps: 3 sets × 20 reps (10 per side)</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Sit at a 45-degree angle, rotate from your core, and keep your chest up throughout the movement.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>5. Leg Raises</h3>
+                    <img src="images/leg-raises.webp" alt="Leg raises exercise" loading="lazy">
+                    <p class="exercise-description">An advanced core exercise that targets the lower abdominals and hip flexors while building strength.</p>
+                    <div class="sets-reps">
+                        <p>Sets & Reps: 3 sets × 12 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Keep your lower back pressed to the ground, raise your legs slowly, and control the descent.</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>3. Bicycle Crunches</h3>
+                    <img src="images/bicycle-crunches.webp" alt="Bicycle crunches exercise" loading="lazy">
+                    <p class="exercise-description">A dynamic core exercise that engages both the rectus abdominis and obliques for comprehensive core development.</p>
+                    <div class="sets-reps">
+                        <p>Sets & Reps: 3 sets × 20 reps (10 per side)</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Move with control, bring your elbow toward the opposite knee, and maintain steady breathing.</p>
+                </div>
+            </div>
+
+            <div class="workout-notes">
+                <h2>Core Workout Tips</h2>
+                <ul>
+                    <li>Rest 30-45 seconds between sets for core exercises</li>
+                    <li>Focus on mind-muscle connection and proper form</li>
+                    <li>Engage your core throughout the entire day, not just during workouts</li>
+                    <li>Combine core exercises with compound movements for maximum benefit</li>
+                    <li>Progress by increasing duration or adding resistance gradually</li>
+                    <li>A strong core improves posture, reduces back pain, and enhances athletic performance</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dannytech-pro Dev. All rights reserved.</p>
+            <p><a href=#"references.html">References & Citations</a></p>
+        </div>
+    </footer>
+</body>
+</html>

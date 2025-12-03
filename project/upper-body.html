@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description -->
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Daniel Sunday, Get fit with our Simple 3-Day Workout Routine Planner. This easy-to-follow plan is perfect for beginners and busy schedules. Download your free, effective routine now">
+        <meta name="keyword" content="3-day workout routine, 3 day split, simple workout planner, beginner workout plan, free 3-day workout, easy fitness plan">
+    <meta name="author" content="Daniel Sunday">
+    <!-- Page title -->
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Sunday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/post-1.jpg" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <h1 class="logo"><img src="images/dynamic-fitness-gym-logo.png" alt="logo" width="40" height="40" loading="lazy"> Simple Workout Planner</h1>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="upper-body.html" class="nav-link active">Upper Body</a></li>
+                    <li><a href="lower-body.html" class="nav-link">Lower Body</a></li>
+                    <li><a href="core.html" class="nav-link">Core</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="workout-page">
+            <div class="workout-header">
+                <h1>Upper Body Workout</h1>
+                <p>Build strength in your chest, back, shoulders, and arms</p>
+            </div>
+
+            <div class="difficulty-toggle-section">
+                <h2>Select Your Level</h2>
+                <button class="difficulty-btn" id="difficultyToggle">
+                    Current Level: <span id="difficultyLevel">Beginner</span>
+                </button>
+                <p class="difficulty-info" id="difficultyInfo">Showing beginner-friendly sets and reps. Click the button to switch to intermediate.</p>
+            </div>
+
+            <div class="exercises-container">
+                <div class="exercise-card">
+                    <h3>1. Bench Press</h3>
+                    <img src="images/bench-press.webp" alt="Bench press exercise" loading="lazy">
+                    <p class="exercise-description">A fundamental chest exercise that builds strength in the pectorals, shoulders, and triceps.</p>
+                    <div class="sets-reps">
+                        <p class="beginner-sets" id="exercise1Beginner">Sets & Reps: 3 sets × 10 reps</p>
+                        <p class="intermediate-sets" id="exercise1Intermediate" style="display: none;">Sets & Reps: 4 sets × 12 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Keep your back flat, lower the bar to chest level, and press explosively.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>2. Bent-Over Barbell Rows</h3>
+                    <img src="images/barbell-row.webp" alt="Barbell row exercise" loading="lazy">
+                    <p class="exercise-description">A compound movement that strengthens the back, lats, and biceps while improving posture.</p>
+                    <div class="sets-reps">
+                        <p class="beginner-sets" id="exercise2Beginner">Sets & Reps: 3 sets × 8 reps</p>
+                        <p class="intermediate-sets" id="exercise2Intermediate" style="display: none;">Sets & Reps: 4 sets × 10 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Maintain a neutral spine, pull the bar to your lower chest, and control the descent.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>3. Shoulder Press</h3>
+                    <img src="images/shoulder-press.webp" alt="Shoulder press exercise" loading="lazy">
+                    <p class="exercise-description">An excellent exercise for building shoulder strength and stability throughout the upper body.</p>
+                    <div class="sets-reps">
+                        <p class="beginner-sets" id="exercise3Beginner">Sets & Reps: 3 sets × 10 reps</p>
+                        <p class="intermediate-sets" id="exercise3Intermediate" style="display: none;">Sets & Reps: 4 sets × 8 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Press overhead with control, engage your core, and avoid arching your back excessively.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>4. Pull-ups or Lat Pulldowns</h3>
+                    <img src="images/pull-ups.webp" alt="Pull-ups exercise" loading="lazy">
+                    <p class="exercise-description">A powerful back and bicep builder that improves upper body pulling strength and grip.</p>
+                    <div class="sets-reps">
+                        <p class="beginner-sets" id="exercise4Beginner">Sets & Reps: 3 sets × 6 reps</p>
+                        <p class="intermediate-sets" id="exercise4Intermediate" style="display: none;">Sets & Reps: 4 sets × 10 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Use full range of motion, pull your elbows down and back, and maintain control throughout.</p>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>5. Dumbbell Curls</h3>
+                    <img src="images/dumbbell-curls.webp" alt="Dumbbell curls exercise" loading="lazy">
+                    <p class="exercise-description">An isolation exercise that targets the biceps and improves arm aesthetics and strength.</p>
+                    <div class="sets-reps">
+                        <p class="beginner-sets" id="exercise5Beginner">Sets & Reps: 3 sets × 12 reps</p>
+                        <p class="intermediate-sets" id="exercise5Intermediate" style="display: none;">Sets & Reps: 4 sets × 10 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Keep your elbows stationary, curl with control, and avoid swinging the weight.</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>3. Shoulder Press</h3>
+                    <img src="images/shoulder-press.webp" alt="Shoulder press exercise" loading="lazy">
+                    <p class="exercise-description">An excellent exercise for building shoulder strength and stability throughout the upper body.</p>
+                    <div class="sets-reps">
+                        <p class="beginner-sets" id="exercise3Beginner">Sets & Reps: 3 sets x 10 reps</p>
+                        <p class="intermediate-sets" id="exercise3Intermediate" style="display: none;">Sets & Reps: 4 sets × 8 reps</p>
+                    </div>
+                    <p class="exercise-tips"><strong>Tips:</strong> Press overhead with control, engage your core, and avoid arching your back excessively.</p>
+                </div>
+            </div>
+
+            <div class="workout-notes">
+                <h2>Workout Tips</h2>
+                <ul>
+                    <li>Rest 60-90 seconds between sets for compound movements</li>
+                    <li>Rest 45-60 seconds between sets for isolation exercises</li>
+                    <li>Focus on proper form over heavy weight</li>
+                    <li>Gradually increase weight as you get stronger</li>
+                    <li>Stay hydrated throughout your workout</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dannytech-pro Dev. All rights reserved.</p>
+            <p><a href=#"references.html">References & Citations</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

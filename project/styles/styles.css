@@ -1,0 +1,822 @@
+/* ============================================
+   GLOBAL STYLES & VARIABLES
+   ============================================ */
+
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #00BCD4;
+    --background-color: #F5F5F5;
+    --text-color: #333333;
+    --white: #FFFFFF;
+    --light-gray: #E0E0E0;
+    --dark-gray: #666666;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    flex: 1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    color: var(--white);
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* ============================================
+   BUTTONS & CTA
+   ============================================ */
+
+.cta-button,
+.card-link,
+.difficulty-btn,
+.add-notes-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cta-button:hover,
+.card-link:hover,
+.difficulty-btn:hover,
+.add-notes-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+}
+
+.card-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
+
+.features {
+    margin-bottom: 4rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   WORKOUT OVERVIEW
+   ============================================ */
+
+.workout-overview {
+    margin-bottom: 4rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.workout-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--secondary-color);
+    transition: var(--transition);
+}
+
+.workout-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.workout-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.workout-card p {
+    margin-bottom: 1.5rem;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0D47A1 100%);
+    color: var(--white);
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.cta-section h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-section .cta-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* ============================================
+   WORKOUT PAGE STYLES
+   ============================================ */
+
+.workout-page {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workout-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.workout-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.workout-header p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+/* ============================================
+   DIFFICULTY TOGGLE
+   ============================================ */
+
+.difficulty-toggle-section {
+    background-color: #F9F9F9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+}
+
+.difficulty-toggle-section h2 {
+    margin-bottom: 1rem;
+}
+
+.difficulty-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#difficultyLevel {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.difficulty-info {
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    font-style: italic;
+}
+
+/* ============================================
+   EXERCISES CONTAINER
+   ============================================ */
+
+.exercises-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.exercise-card {
+    background-color: #FAFAFA;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    transition: var(--transition);
+}
+
+.exercise-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);
+    transform: translateY(-3px);
+}
+
+.exercise-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.exercise-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.exercise-description {
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.sets-reps {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.sets-reps p {
+    margin: 0;
+}
+
+.exercise-tips {
+    background-color: #E3F2FD;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* ============================================
+   NOTES SECTION
+   ============================================ */
+
+.notes-section {
+    background-color: #F9F9F9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 2px solid var(--secondary-color);
+}
+
+.notes-section h2 {
+    margin-bottom: 0.5rem;
+}
+
+.notes-section p {
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+}
+
+.add-notes-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+.notes-container {
+    margin-top: 1.5rem;
+}
+
+.note-item {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.note-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+}
+
+.note-input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+}
+
+.delete-note-btn {
+    background-color: #FF6B6B;
+    color: var(--white);
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.delete-note-btn:hover {
+    background-color: #FF5252;
+}
+
+/* ============================================
+   WORKOUT NOTES / TIPS
+   ============================================ */
+
+.workout-notes {
+    background-color: #F9F9F9;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.workout-notes h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.workout-notes ul {
+    list-style-position: inside;
+    color: var(--dark-gray);
+}
+
+.workout-notes li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* ============================================
+   REFERENCES PAGE
+   ============================================ */
+
+.references-page {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.references-page h1 {
+    margin-bottom: 1rem;
+}
+
+.references-page h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.references-page ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.references-page li {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.references-page a {
+    color: var(--secondary-color);
+    word-break: break-all;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.footer-content a {
+    color: var(--secondary-color);
+}
+
+.footer-content a:hover {
+    color: var(--white);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLET
+   ============================================ */
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .features-grid,
+    .cards-container,
+    .exercises-container {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .workout-page {
+        padding: 1.5rem;
+    }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE
+   ============================================ */
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 1rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button,
+    .card-link,
+    .difficulty-btn,
+    .add-notes-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .feature-card,
+    .workout-card,
+    .exercise-card {
+        padding: 1.5rem;
+    }
+
+    .exercise-card img {
+        height: 150px;
+    }
+
+    .cta-section {
+        padding: 1.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .difficulty-toggle-section,
+    .notes-section,
+    .workout-notes {
+        padding: 1.5rem;
+    }
+
+    .note-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .delete-note-btn {
+        width: 100%;
+    }
+
+    main {
+        padding: 1rem 0.75rem;
+    }
+
+    .workout-page {
+        padding: 1rem;
+    }
+
+    .references-page {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .references-page ul {
+        margin-left: 0.5rem;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY & UTILITIES
+   ============================================ */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+button:focus,
+a:focus,
+input:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    header,
+    footer,
+    .cta-button,
+    .card-link,
+    .difficulty-btn,
+    .add-notes-btn,
+    .hamburger {
+        display: none;
+    }
+
+    body {
+        background-color: var(--white);
+    }
+
+    main {
+        max-width: 100%;
+    }
+}

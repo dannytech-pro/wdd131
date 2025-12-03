@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description -->
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Daniel Sunday, Get fit with our Simple 3-Day Workout Routine Planner. This easy-to-follow plan is perfect for beginners and busy schedules. Download your free, effective routine now">
+        <meta name="keyword" content="3-day workout routine, 3 day split, simple workout planner, beginner workout plan, free 3-day workout, easy fitness plan">
+    <meta name="author" content="Daniel Sunday">
+    <!-- Page title -->
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Sunday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/dynamic-fitness-gym-logo.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <h1 class="logo"><img src="images/dynamic-fitness-gym-logo.png" alt="logo" width="40" height="40" loading="lazy"> Simple Workout Planner</h1>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="upper-body.html" class="nav-link">Upper Body</a></li>
+                    <li><a href="lower-body.html" class="nav-link">Lower Body</a></li>
+                    <li><a href="core.html" class="nav-link">Core</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your 3-Day Fitness Journey Starts Here</h1>
+                <p>A structured, simple, and effective workout plan designed for beginners and intermediate fitness enthusiasts.</p>
+                <button class="cta-button" id="ctaButton">Get Started</button>
+            </div>
+            <img src="images/hero-image.webp" alt="Fitness motivation image" class="hero-image" loading="lazy">
+        </section>
+
+        <section class="features">
+            <h2>Why Choose Our Workout Plan?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>📅 Structured Schedule</h3>
+                    <p>Three distinct workout days targeting different muscle groups: Upper Body, Lower Body, and Core. Perfect for building a consistent routine.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎯 Beginner-Friendly</h3>
+                    <p>Each workout includes clear instructions, set and rep recommendations for beginners, with options to scale up to intermediate levels.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📝 Personalized Tracking</h3>
+                    <p>Add custom notes to exercises, track your modifications, and save your progress locally using our note-taking feature.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="workout-overview">
+            <h2>Your 3-Day Split</h2>
+            <div class="cards-container">
+                <div class="workout-card">
+                    <h3>Day 1: Upper Body</h3>
+                    <p>Build strength in your chest, back, shoulders, and arms with targeted exercises designed to maximize muscle engagement.</p>
+                    <a href="upper-body.html" class="card-link">View Workout →</a>
+                </div>
+                <div class="workout-card">
+                    <h3>Day 2: Lower Body</h3>
+                    <p>Strengthen your legs and glutes with compound movements and isolation exercises for balanced lower body development.</p>
+                    <a href="lower-body.html" class="card-link">View Workout →</a>
+                </div>
+                <div class="workout-card">
+                    <h3>Day 3: Core</h3>
+                    <p>Develop a strong, stable core with exercises that improve posture, balance, and overall functional fitness.</p>
+                    <a href="core.html" class="card-link">View Workout →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Transform Your Fitness?</h2>
+            <p>Start with Day 1 and commit to consistency. Your future self will thank you!</p>
+            <a href="upper-body.html" class="cta-button">Begin Upper Body Workout</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dannytech-pro Dev. All rights reserved.</p>
+            <p><a href=#"references.html">References & Citations</a></p>
+        </div>
+    </footer>
+</body>
+</html>
