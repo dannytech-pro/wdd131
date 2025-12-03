@@ -55,10 +55,40 @@
             <div class="notes-section">
                 <h2>Personalized Notes</h2>
                 <p>Track your modifications and progress by adding notes to your core exercises.</p>
-                <button class="add-notes-btn" id="addNotesBtn">+ Add Notes</button>
+                
+                <form id="notesForm" class="notes-form">
+                    <fieldset>
+                        <legend>Add a New Note</legend>
+                        
+                        <div class="form-group">
+                            <label for="exerciseSelect">Select Exercise:</label>
+                            <select id="exerciseSelect" name="exercise" required>
+                                <option value="">-- Choose an exercise --</option>
+                                <option value="Plank">1. Plank</option>
+                                <option value="Crunches">2. Crunches</option>
+                                <option value="Bicycle Crunches">3. Bicycle Crunches</option>
+                                <option value="Russian Twists">4. Russian Twists</option>
+                                <option value="Leg Raises">5. Leg Raises</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="noteText">Your Note:</label>
+                            <textarea id="noteText" name="note" placeholder="Enter your note, modification, or progress update..." required rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="noteDate">Date:</label>
+                            <input type="date" id="noteDate" name="date" required>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Add Note</button>
+                        <button type="reset" class="reset-btn">Clear Form</button>
+                    </fieldset>
+                </form>
+                
                 <div id="notesContainer" class="notes-container"></div>
             </div>
-
             <div class="exercises-container">
                 <div class="exercise-card">
                     <h3>1. Plank</h3>
